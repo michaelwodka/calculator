@@ -1,11 +1,15 @@
 #bootstrap-overrides{
 	text-align: center;
-	font-size: 18px;
 }
 
 #bootstrap-overrides h1{
 	font-weight: bold;
-	margin-bottom: 50px;
+	font-size: 56px;
+	height: 12.5vh;
+}
+
+#bootstrap-overrides .row{
+	height: 12.5vh;
 }
 
 #bootstrap-overrides .btn{
@@ -23,7 +27,6 @@
 }
 
 #results{
-	font-size: 22px;
+	font-size: 48px;
 	text-align: right;
-	margin-bottom: 5px;
 }
