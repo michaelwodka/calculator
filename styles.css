@@ -1,5 +1,6 @@
 #bootstrap-overrides{
 	text-align: center;
+	font-size: 18px;
 }
 
 #bootstrap-overrides h1{
@@ -9,6 +10,8 @@
 
 #bootstrap-overrides .btn{
 	border: 2px solid white;
+	font-size: 22px;
+	height: 12.5vh;
 }
 
 #options{
@@ -20,6 +23,7 @@
 }
 
 #results{
+	font-size: 22px;
 	text-align: right;
 	margin-bottom: 5px;
 }
