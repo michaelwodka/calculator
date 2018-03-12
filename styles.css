@@ -5,17 +5,17 @@
 #bootstrap-overrides h1{
 	font-weight: bold;
 	font-size: 56px;
-	height: 12.5vh;
+	height: 10vh;
 }
 
 #bootstrap-overrides .row{
-	height: 12.5vh;
+	height: 10vh;
 }
 
 #bootstrap-overrides .btn{
 	border: 2px solid white;
 	font-size: 22px;
-	height: 12.5vh;
+	height: 10vh;
 }
 
 #options{
