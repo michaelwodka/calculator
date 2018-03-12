@@ -1,10 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name ="description" content = "A calculator web application.">
+	<meta charset="UTF-8">
 	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
-<body>
-	<h1>Calculator</h1>
+<body id="bootstrap-overrides">
+	<div class = "container">
+		<h1>Calculator</h1>
+
+		<div class = "row">
+			<div class = "col-xs-4 col-xs-offset-4 borders" id = "results">0</div>
+		</div>
+
+		<div class = "row">
+			<button type= "button" class = "btn btn-primary col-xs-1 col-xs-offset-4" id = "options">AC</button>
+			<button type= "button" class = "btn btn-primary col-xs-1" id = "options">+/-</button>
+			<button type= "button" class = "btn btn-primary col-xs-1" id = "options">%</button>
+			<button type= "button" class = "btn btn-primary col-xs-1" id= "functions">/</button>
+		</div>
+
+		<div class = "row">
+			<button type= "button" class = "btn btn-primary col-xs-1 col-xs-offset-4">7</button>
+			<button type= "button" class = "btn btn-primary col-xs-1">8</button>
+			<button type= "button" class = "btn btn-primary col-xs-1">9</button>
+			<button type= "button" class = "btn btn-primary col-xs-1" id= "functions">X</button>
+		</div>
+
+		<div class = "row">
+			<button type= "button" class = "btn btn-primary col-xs-1 col-xs-offset-4">4</button>
+			<button type= "button" class = "btn btn-primary col-xs-1">5</button>
+			<button type= "button" class = "btn btn-primary col-xs-1">6</button>
+			<button type= "button" class = "btn btn-primary col-xs-1" id= "functions">-</button>
+		</div>
+
+		<div class = "row">
+			<button type= "button" class = "btn btn-primary col-xs-1 col-xs-offset-4">1</button>
+			<button type= "button" class = "btn btn-primary col-xs-1">2</button>
+			<button type= "button" class = "btn btn-primary col-xs-1">3</button>
+			<button type= "button" class = "btn btn-primary col-xs-1" id= "functions">+</button>
+		</div>
+
+		<div class = "row">
+			<button type= "button" class = "btn btn-primary col-xs-2 col-xs-offset-4">0</button>
+			<button type= "button" class = "btn btn-primary col-xs-1">.</button>
+			<button type= "button" class = "btn btn-primary col-xs-1" id= "functions">=</button>
+		</div>
+
+	</div>
 
 </body>
 </html>
