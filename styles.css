@@ -9,24 +9,29 @@
 }
 
 #bootstrap-overrides .row{
-	height: 10vh;
+	height: 12.5vh;
 }
 
 #bootstrap-overrides .btn{
 	border: 2px solid white;
 	font-size: 22px;
-	height: 10vh;
+	height: 12.5vh;
 }
 
-#options{
+#AC, #plusminus, #percent {
 	background-color: gray;
 }
 
-#functions{
+#divide, #multiply, #minus, #plus, #equal {
 	background-color: orange;
 }
 
 #results{
 	font-size: 48px;
 	text-align: right;
+}
+
+
+#bootstrap-overrides button:focus {
+    background-color: red;
 }
