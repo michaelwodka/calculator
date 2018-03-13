@@ -5,7 +5,7 @@
 #bootstrap-overrides h1{
 	font-weight: bold;
 	font-size: 56px;
-	height: 10vh;
+	height: 12.5vh;
 }
 
 #bootstrap-overrides .row{
@@ -18,11 +18,11 @@
 	height: 12.5vh;
 }
 
-#AC, #plusminus, #percent {
+#bootstrap-overrides #AC, #plusminus, #percent {
 	background-color: gray;
 }
 
-#divide, #multiply, #minus, #plus, #equal {
+#bootstrap-overrides #divide, #multiply, #minus, #plus, #equal {
 	background-color: orange;
 }
 
