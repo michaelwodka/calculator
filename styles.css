@@ -18,11 +18,11 @@
 	height: 12.5vh;
 }
 
-#bootstrap-overrides #AC, #plusminus, #percent {
+#AC, #plusminus, #percent {
 	background-color: gray;
 }
 
-#bootstrap-overrides #divide, #multiply, #minus, #plus, #equal {
+#divide, #multiply, #minus, #plus, #equal {
 	background-color: orange;
 }
 
