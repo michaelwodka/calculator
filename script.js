@@ -6,7 +6,15 @@ function clicker (){
     for (var i=0;i<buttons.length;i++){
         buttons[i].addEventListener("click", function(){
 
-        	calc = calc + this.innerHTML
+        	// console.log("init start = " + init)
+
+        	if(init != null && isNaN(this.innerHTML)===false){
+        		init = null
+        		calc = this.innerHTML
+        	} else {
+        		init = null
+        		calc = calc + this.innerHTML
+        	}
 
         	if (this.id == "AC") {
         		calc = ""
@@ -17,17 +25,17 @@ function clicker (){
         	console.log(calc)
 
         	if (this.id=="equal"){
-				console.log("init start = " + init)
 
-        		var numbers = calc.split(/\D/g)
+        		// var numbers = calc.split(/\D/g)
+        		var numbers = calc.split(/\x|[/]|\+|\−|\=/g)
         		numbers = numbers.filter(Boolean)
         		console.log(numbers)
-        		var operators = calc.split(/[0-9]/)
+        		var operators = calc.split(/[0-9]|[.]|[-]/)
         		operators = operators.filter(Boolean)
         		console.log(operators)
 
         		for (var i=0;i<operators.length;i++){
-        			if (operators[i] != "x" || operators[i] != "/" || operators[i] != "+" || operators[i] != "-" || operators[i] != "="){
+        			if (operators[i] != "x" || operators[i] != "/" || operators[i] != "+" || operators[i] != "−" || operators[i] != "="){
         				operators[i] = operators[i].slice(-1)
         				}
         			}
@@ -59,20 +67,18 @@ function clicker (){
         				init = Number(init)+Number(numbers[i+1]) 
         			}
 
-         			else if (operators[i] == "-" && init == null) {
-        				init = numbers[i]-numbers[i+1] 
+         			else if (operators[i] == "−" && init == null) {
+        				init = Number(numbers[i])-Number(numbers[i+1]) 
         			}
 
-         			else if (operators[i] == "-" && init != null) {
-        				init = init-numbers[i+1] 
+         			else if (operators[i] == "−" && init != null) {
+        				init = Number(init)-Number(numbers[i+1]) 
         			}
         		}
 
         		results.innerHTML = parseFloat(init.toFixed(8))
 
         		calc = init
-
-        		// init = "=" + init
 
         		console.log("init end = " + init)
 
