@@ -8,6 +8,8 @@ function clicker (){
 
         	// console.log("init start = " + init)
 
+        	this.focus()
+
         	if(init != null && isNaN(this.innerHTML)===false){
         		init = null
         		calc = this.innerHTML
