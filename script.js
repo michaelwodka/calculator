@@ -10,6 +10,14 @@ function clicker (){
 
         	this.focus()
 
+        	if (this.id == "plusminus"){
+        		calc = -calc
+        	}
+
+        	if (this.id == "percent"){
+        		calc = calc/100
+        	}
+
         	if(init != null && isNaN(this.innerHTML)===false){
         		init = null
         		calc = this.innerHTML
@@ -24,26 +32,22 @@ function clicker (){
         		init = null
         	}
 
-        	if (this.id == "plusminus"){
-        		calc.toString().slice(-1) = 0 - calc.toString().slice(-1)
-        	}
-
         	console.log(calc)
 
-        	console.log(calc.toString().slice(-1))
+        	// console.log(calc.toString().slice(-1))
 
         	if (this.id=="equal"){
 
         		// var numbers = calc.split(/\D/g)
-        		var numbers = calc.split(/\x|[/]|\+|\−|\=/g)
+        		var numbers = calc.split(/\x|[÷]|[/]|\+|\−|\=|[%]/g)
         		numbers = numbers.filter(Boolean)
         		console.log(numbers)
-        		var operators = calc.split(/[0-9]|[.]|[-]/)
+        		var operators = calc.split(/[0-9]|[.]|[-]|[%]/)
         		operators = operators.filter(Boolean)
         		console.log(operators)
 
         		for (var i=0;i<operators.length;i++){
-        			if (operators[i] != "x" || operators[i] != "/" || operators[i] != "+" || operators[i] != "−" || operators[i] != "="){
+        			if (operators[i] != "x" || operators[i] != "÷" || operators[i] != "+" || operators[i] != "−" || operators[i] != "="){
         				operators[i] = operators[i].slice(-1)
         				}
         			}
@@ -59,11 +63,11 @@ function clicker (){
         				init = init*numbers[i+1] 
         			}
 
-        			else if (operators[i] == "/" && init == null) {
+        			else if (operators[i] == "÷" && init == null) {
         				init = Number(numbers[i]) / Number(numbers[i+1]) 
         			}
 
-        			else if (operators[i] == "/" && init != null) {
+        			else if (operators[i] == "÷" && init != null) {
         				init = Number(init) / Number(numbers[i+1]) 
         			}
 
