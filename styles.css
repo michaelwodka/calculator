@@ -27,6 +27,6 @@
 }
 
 
-#bootstrap-overrides button:focus {
-    background-color: red;
+#bootstrap-overrides button:active, button:hover {
+    background-color: red !important;
 }
