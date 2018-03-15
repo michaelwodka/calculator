@@ -22,7 +22,13 @@ function clicker (){
         		init = null
         	}
 
+        	if (this.id == "plusminus"){
+        		calc.toString().slice(-1) = 0 - calc.toString().slice(-1)
+        	}
+
         	console.log(calc)
+
+        	console.log(calc.toString().slice(-1))
 
         	if (this.id=="equal"){
 
