@@ -1,0 +1,32 @@
+#bootstrap-overrides{
+	text-align: center;
+}
+
+#bootstrap-overrides .row{
+	height: 14vh;
+}
+
+#bootstrap-overrides .btn{
+	border: 2px solid white;
+	font-size: 22px;
+	height: 14vh;
+}
+
+#AC, #plusminus, #percent {
+	background-color: gray;
+}
+
+#divide, #multiply, #minus, #plus, #equal {
+	background-color: orange;
+}
+
+#results{
+	font-size: 48px;
+	text-align: right;
+	margin-top: 25px;
+}
+
+
+#bootstrap-overrides button:focus {
+    background-color: red !important;
+}
